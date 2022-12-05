@@ -16,5 +16,16 @@ namespace Lottozahlen
         {
             InitializeComponent();
         }
+
+        private void button_zahlen_Click(object sender, EventArgs e)
+        {
+            int[] zahlen = new int[6];
+            Random r = new Random();
+            for(int i = 0; i < zahlen.Length; i++)
+            {
+                zahlen[i] = r;
+            }
+
+        }
     }
 }
